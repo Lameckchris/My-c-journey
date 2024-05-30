@@ -13,6 +13,8 @@ float length;
 float width;
 float Volume;
 float Weight;
+int International divisor=166;
+int Local divisor=194;
 
 int main(int argc, const char * argv[])
 {
@@ -36,14 +38,14 @@ int main(int argc, const char * argv[])
     {
         case 1:
         {
-            Weight=Volume/166;
+            Weight=Volume/International divisor;
             printf("Dimension Weight(In Pound):%.3f\n",Weight);
             break;
         }
             
         case 2:
         {
-            Weight=Volume/194;
+            Weight=Volume/Local divisor;
             printf("Dimension Weight(In Pounds):%.3f\n",Weight);
             break;
         }
